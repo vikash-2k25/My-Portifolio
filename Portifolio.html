@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<style>
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+}
+body {
+      background:navy;
+      color: white;
+}
+#linkk{
+  text-decoration: none;
+  color: black;
+}
+ header {
+      position: sticky;
+      top: 0;
+      background: #222e42;
+      padding: 15px 10%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 100;
+    }
+
+    header h1 {
+      font-size: 24px;
+      color: #38bdf8;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #efefef;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #38bdf8;
+    }
+    .home-left{
+      justify-items: center;
+      padding: 10%;
+      float: left;
+      margin-left: 45px;
+      border-radius: 5%;
+      /* filter: drop-shadow(50px 50px 50px solid yellow); */
+    }
+    .log{
+      border-radius: 40%;
+      
+    }
+    .home-right{
+      justify-items: center;
+      padding: 10%;
+      margin-left: 400px;
+
+    }
+    .home-h1{
+      font-size: 3rem;
+      color: aqua;
+
+    }
+    .home-h6{
+      font-size: x-large;
+
+    }
+    .home-para{
+      font-weight: 500;
+      font-size: large;
+      margin-top: 20px;
+    }
+    .about-h2 {
+      color: aqua;
+      justify-self: left;
+      margin-left: 80px; 
+      margin-top: 100px; 
+    }
+    .about-para{
+      margin-left: 80px;
+      margin-right: 70px;
+      font-weight: 500;
+      margin-top: 10px;
+      font-size: large;
+    }
+    #btn{
+      margin-left: 80px;
+      margin-top: 60px;
+      background-color: #38bdf8;
+      
+      color: black;
+      font-size: 1.2rem;
+      font-weight: bolder;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: transform 0.5s, background 0.6s;
+    }
+    #btn:hover{
+      transform: translateY(-5px);
+      background-color: aqua;
+    }
+    #skills-btn{
+     margin-left: 20px;
+      margin-top: 30px;
+      background-color: #38bdf8;
+      color: black;
+      font-size: 1.2rem;
+      font-weight: bolder;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      
+
+    }
+
+    #skills-btn1{
+     margin-left: 80px;
+      margin-top: 30px;
+      background-color: #38bdf8;
+      color:black;
+      font-size: 1.2rem;
+      font-weight: bolder;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .skills-h2{
+     
+      color: aqua;
+      justify-self: left;
+      margin-left: 80px; 
+      margin-top: 100px; 
+    }
+    .projects-h2{
+      color: aqua;
+      justify-self: left;
+      margin-left: 80px; 
+      margin-top: 100px; 
+    }
+    .project1h3{
+      margin-top: 20px;
+      color: aquamarine;
+      font-weight: bolder;
+      font-size: 1.8rem;
+      justify-self: center;
+    }
+    .project1{
+      float: left;
+      height: 250px;
+      width: 40%;
+      margin-left: 80px;
+      margin-top: 30px;
+      border: 2px solid black;
+      box-shadow: 5px 5px 5px aqua;
+      transition: transform 0.3s ease-in;
+    }
+    .prject1:hover{
+      transform:translateY(-155px);
+
+}
+    .project-para{
+      margin-top: 30px;
+      font-size: large;
+      font-weight: bold;
+      margin-left: 30px;
+      margin-right: 20px;
+    }
+
+ .project2h3{
+      margin-top: 20px;
+      color: aquamarine;
+      font-weight: bolder;
+      font-size: 1.8rem;
+      justify-self: center;
+    }
+    .project2{
+      height: 250px;
+      float: right;
+      width: 40%;
+      margin-left: 80px;
+      margin-right: 80px;
+      margin-top: 30px;
+      border: 2px solid black;
+      box-shadow: 5px 5px 5px aqua;
+
+    }
+    .project2-para{
+      margin-top: 30px;
+      font-size: large;
+      font-weight: bold;
+      margin-left: 30px;
+      margin-right: 20px;
+    }
+    #project-link{
+      text-decoration: none;
+      color: white;
+    }
+  #contact{
+      margin-top: 300px;
+    }
+.contact-h2{
+  color: aqua;
+      justify-self: left;
+      margin-left: 80px;    
+}
+.contact-link{
+  margin-left: 80px;
+  font-size: larger;
+  font-weight: bolder;
+}
+#contact-link{
+  color: whitesmoke;
+}
+.prject1 :hover{
+  transform: translateY(-5px);
+
+}
+.footer-para{
+  margin-top: 50px;
+  margin-bottom: 5px;
+  color: black;
+  background-color: rgb(41, 197, 145);
+  font-weight: bold;
+  font-size: 1.3rem;
+  padding: 10px 400px;
+  justify-self: center;
+  
+}
+</style>
+</head>
+<body>
+     <header>
+    <h1>Vikash's Portifolio</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section id="Home">
+    <div class="home-left">
+        <img src="C:\Users\Dc\Desktop\vikashh.jpg" height="250px" width="250" alt="" class="log">
+       
+
+    </div>
+    <div class="home-right">
+         <h1 class="home-h1">Hi , I am Vikash</h1>
+        <h4 class="home-h6">Full Stack Developer</h4>
+        <p class="home-para"> A Hightly motivated  Full Stack Developer passionate About Creating Clean , Modern , and User Friendly Websites using HTML , CSS3 , JavaScript. </p>
+    </div>
+  </section>
+  <section id="about">
+     <h2 class="about-h2">About Me</h2>
+     <p class="about-para"> I am a Full Stack Developer specializing in Creating Modern Websites and Highly Motivated BCA graduate seeking a Web Development Position. I aim to contribute to a Company's Success by utilizing my skills in HTML ,CSS and Javascript  while effectively managing tasks and collaborating with team members in the IT Industry.</p>
+    <button id="btn"><a href="https://drive.google.com/file/d/1ohOV-bmwJ4WCQVGnE3St133_XkymIU-y/view?usp=sharing" id="linkk"> Download Resume =)</a></button>
+
+  </section>
+  <section id="skills">
+    <h2 class="skills-h2">Skills</h2>
+    <button id="skills-btn1">HTML </button>
+    <button id="skills-btn">CSS </button>
+    <button id="skills-btn">JavaScript</button>
+    <button id="skills-btn">JAVA </button>
+    <button id="skills-btn">Python </button>
+    <button id="skills-btn">DSA with Java </button>
+    <button id="skills-btn">PHP </button>
+    <button id="skills-btn">MYSQL </button>
+    <button id="skills-btn">.NET </button>
+  </section>
+  <section class="projects">
+    <h2 class="projects-h2">Projects</h2>
+    <div class="project1"><a href="https://github.com/vikash-2k25" id="project-link">
+        <h3 class="project1h3">Portifolio </h3>
+        <p class="project-para">A fully Responsive Portifolio website using HTML and CSS . it shows user's Skiils , About , Contact and Projetcs. it includes user friendly animations</p>
+   </a> </div>
+    <div class="project2"><a href="https://github.com/vikash-2k25/Sudoku-solver-Using-Java" id="project-link">
+        <h3 class="project2h3"> Sudoku Solver </h3>
+         <p class="project2-para"> This Project is about the Sudoku Solver. It the solution of any Sudoku Problem . it is created by Java Language using the Backtracing . which are related to Data Structure.</p>
+    </a></div>
+  </section>
+  <br>
+  <section id="contact">
+ 
+    <h2 class="contact-h2">Contact</h2>
+       <p class="contact-link">WhatsApp => +91 9259275873</p>
+       <p class="contact-link">Email =>  <a href="mailto:vikashbhandari259@gmail.com" id="contact-link">vikashbhandari259@gmail.com  </a></p>
+    <p class="contact-link">LinkedIn =><a href="https://www.linkedin.com/in/vikash-bhandari/" id="contact-link">Vikash.</a></p>
+     <p class="contact-link">Github =><a href="https://github.com/vikash-2k25" id="contact-link"> vikash-2k25</a></p>
+      <p class="contact-link">Instagram => <a href="https://www.instagram.com/vikassh_18?igsh=ODE2MDllY2E4NDho" id="contact-link"> vikashh_18</a></p>
+
+  </section>
+  <footer>
+    <p class="footer-para"> Vikash's Portifolio , All Right Reserverd 2025</p>
+  </footer>
+
+
+    
+</body>
+</html>
